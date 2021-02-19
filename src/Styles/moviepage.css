@@ -1,0 +1,132 @@
+.movie-title-container,
+.movie-summary,
+.movie-ratings,
+.movie-data,
+.movie-collections,
+.movie-starring {
+  margin-bottom: 1.5rem;
+}
+.movie-title-container {
+  display: flex;
+  justify-content: space-between;
+}
+.movie-title {
+  font-weight: 300;
+}
+.bookmark-icon {
+  width: fit-content;
+  margin-right: 10px;
+}
+.star-icon{
+  margin-right: 5px;
+}
+.movie-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+.odd-cast,
+.even-cast {
+  padding: 0.6rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+}
+.movie-ratings {
+  padding: 3px 0;
+  display: flex;
+  align-items: center;
+}
+.rating-values {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.ver-line {
+  width: 1px;
+  height: 25px;
+  margin: 0 5px;
+  background: #9ea1a6;
+}
+.rating-stars {
+  border-right: solid 1px #9ea1a6;
+  padding-right: 5px;
+}
+.odd-cast {
+  background-color: #656c770d;
+}
+.movie-cast {
+  margin-bottom: 2rem;
+  list-style: none;
+  min-width: 300px;
+  width: 60%;
+}
+.flex-title{
+  display: flex;
+}
+.flex-rating{
+  display: flex;
+  align-items: baseline;
+  width: fit-content;
+  margin-left: 1.5vw;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.row:after {
+  content: " ";
+  clear: both;
+  display: block;
+  overflow: hidden;
+  height: 0;
+}
+.movie-image-container,
+.movie-info-container {
+  position: relative;
+  float: left;
+  margin-bottom: 0.75rem;
+}
+.movie-image-container {
+  width: 32%;
+}
+
+.movie-info-container {
+  width: 64%;
+}
+
+@media screen and (max-width: 991px) {
+  .movie-image-container {
+    width: 44%;
+  }
+
+  .movie-info-container {
+    width: 54%;
+  }
+  .movie-title-container,
+  .movie-summary,
+  .movie-ratings,
+  .movie-data,
+  .movie-collections,
+  .movie-starring {
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-width: 700px) {
+  .movie-info-container {
+    width: 100%;
+  }
+  .movie-image-container {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+  .movie-image {
+    width: 80%;
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+}

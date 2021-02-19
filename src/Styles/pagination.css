@@ -1,0 +1,24 @@
+.pagination {
+  clear: both;
+  text-align: center;
+  margin: 1rem 0;
+}
+.page-number {
+  line-height: 2.5;
+  display: inline-block;
+  border-radius: 1vmin;
+  background: #e7e7e7;
+  width:40px;
+  height: 40px;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  color: #84878d;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  font-size: inherit;
+  overflow: hidden;
+  cursor: pointer;
+}
+.current {
+  background: #ffaa3c;
+  color: white;
+}

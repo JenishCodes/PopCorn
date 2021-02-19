@@ -1,0 +1,15 @@
+.breadcrumbs {
+  padding-bottom: 2vh;
+  margin-bottom: 3vh;
+  border-bottom: 1px solid #ebebeb;
+}
+.breadcrumbs-link {
+  color: #9ea1a6;
+}
+.breadcrumbs-link:hover {
+  color: #e35b63;
+}
+.breadcrumbs-arrow {
+  font-size: 14px;
+  margin: 0 10px;
+}

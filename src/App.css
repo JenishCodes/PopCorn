@@ -1,0 +1,152 @@
+.cast,
+figure,
+footer,
+.site-header {
+  display: block;
+}
+*{
+  outline: none;
+}
+body{
+  display: flex;
+  flex-direction: column;
+}
+#site-content{
+  flex: 1 0 auto;
+}
+.site-footer{
+  flex-shrink: 0;
+}
+html {
+  overflow-y: auto;
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+h1 {
+  font-size: calc(1.5rem + 1.5vw + 1.5vh);
+  font-weight: 700;
+  margin: 0;
+}
+h3{
+  margin: 0;
+}
+h2 {
+  font-size: calc(1.25rem + 1.25vw + 1.25vh);
+  font-weight: 700;
+  margin: 0;
+}
+
+img {
+  border: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+button,
+input,
+select {
+  font-family: inherit;
+  font-size: 1rem;
+  margin: 0;
+  vertical-align: baseline;
+  background: transparent;
+  color: #9ea1a6;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+input[type="submit"] {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image: url("./Assets/background.jpg");
+  background-position: top center;
+  background-repeat: round;
+  color: #9ea1a6;
+  font-family: "Roboto", "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: normal;
+}
+ul {
+  margin: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+  color: #e35b63;
+}
+p {
+  margin-top: 0;
+}
+.container {
+  margin: auto;
+  *zoom: 1;
+}
+
+@media (max-width: 767px){
+  .container {
+    padding: 0 15px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+.main-content .container {
+  border-radius: 5px;
+}
+.line {
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  margin: 3px 0;
+}
+.site-footer{
+  margin-top: 1.5rem;
+  border-top: solid 1px #9ea1a6;
+  text-align: right;
+  display: inherit;
+  height: 100px;
+}
+.flex{
+  display: flex;
+  align-items: baseline;
+}

@@ -1,0 +1,157 @@
+.profile-container {
+  display: flex;
+  flex-direction: row;
+}
+.profile-img-picker {
+  display: none;
+  border-bottom: none;
+}
+.profile-img-container {
+  flex: 1;
+  margin: auto;
+  text-align: center;
+}
+.profile-img{
+  margin: auto;
+  border-radius: 10%;
+  width: 155px;
+  height: 155px;
+}
+
+.delete-btn {
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  background-color: red;
+  align-self: center;
+}
+.profile-btn {
+  background-color: blue;
+  margin-top: 20px;
+  border: none;
+  border-radius: 20px;
+  padding: 10px;
+  width: 100%;
+  align-self: center;
+}
+.profile-line {
+  border-width: 1px;
+  border-color: grey;
+  border-style: solid;
+}
+.profile-name-container {
+  border-bottom: solid 1px #ebebeb;
+  padding: 15px 5px;
+}
+.profile-name-input {
+  border: none;
+  border-bottom: solid 2px #ebebeb;
+}
+.profile-email-container {
+  border-bottom: solid 1px #ebebeb;
+  padding: 15px 5px;
+}
+.profile-watchlist-btn,
+.profile-rated-btn,
+.profile-signout-container {
+  border-bottom: solid 1px #ebebeb;
+  padding: 15px 5px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.profile {
+  position: relative;
+  min-height: 1px;
+  padding: 0 15px;
+  float: left;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+}
+.movie-container {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  width: 75%;
+  overflow-y: auto;
+}
+.profile-rated-btn:hover,
+.profile-watchlist-btn:hover,
+.profile-signout-container:hover {
+  background-color: #656c7750;
+}
+
+@media screen and (max-width: 992px) {
+  .movie-container {
+    padding: 0%;
+    width: 100%;
+  }
+  .profile {
+    width: 100%;
+    flex-direction: row;
+    padding: 0;
+  }
+  .profile-line {
+    margin: 20px 0;
+  }
+  .info {
+    flex-direction: row;
+    flex:2;
+    margin-right: 1rem;
+  }
+  .profile-container {
+    flex-direction: column;
+  }
+  .btn-container {
+    margin: auto 0;
+    flex:1;
+  }
+  .profile-info-container,
+  .profile-img-container{
+    flex:1
+  }
+}
+@media screen and (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+    padding: 0;
+  }
+  .info {
+    justify-content: space-evenly;
+  }
+  .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: auto 0;
+  }
+  .delete-btn,
+  .profile-btn {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 519px) {
+  .info {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 393px) {
+  .btn-container {
+    flex-direction: column;
+  }
+  .delete-btn,
+  .profile-btn {
+    width: 80%;
+  }
+}

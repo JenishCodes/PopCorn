@@ -1,0 +1,34 @@
+.site-header {
+  padding-top:6vh;
+  padding-bottom: 50px;
+}
+.site-logo {
+  height: calc(1.5rem + 1.5vw + 1.5vh);
+}
+.site-title {
+  color: #eede6a;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-container {
+  display: flex;
+  align-items: center;
+}
+.nav-menu-item {
+  padding:1vh 1.5vw;
+  border: solid 1px;
+  border-radius: 5px;
+  color: inherit;
+}
+.nav-menu-item:hover{
+  color: #e35b63;
+}
+
+@media screen and (max-width: 850px) {
+  .site-header{
+    padding-top: 3vh;
+  }
+}
